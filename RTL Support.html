@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Fixed Offcanvas</title>
+    <link href="./bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/css/main-sidbar.css">
+    <link rel="stylesheet" href="./style/css/RTL-support.css">
+</head>
+
+<body>
+    <div class="container-fluid mainpage">
+        <div class="row ">
+            <!-- سایدبار ثابت -->
+            <div class="col-2 d-none d-lg-block" style="padding-left: 0px; float: right !important;">
+                <div class="custom-offcanvas text-dark d-flex flex-column p-02">
+                    <h5 class="text-center m-4">تیم خلاق</h5>
+                    <ul class="nav flex-column list-group mt-3">
+                        <li class="nav-item active">
+                            <i class="bi bi-grid-1x2-fill p-2"></i>
+                            <a href="#"
+                                class="nav-link text-dark list-group-item active shadow-lg border-0 rounded-2 nav-header-style">داشبورد</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="bi bi-person-fill text-dark p-2"></i>
+                            <a href="./UserProfile.html" class="nav-link text-dark nav-header-style">پروفایل کاربر</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="bi bi-clipboard p-2"></i>
+                            <a href="TableList.html" class="nav-link text-dark nav-header-style">لیست جداول</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="bi bi-clipboard-fill p-2"></i>
+                            <a href="Typography.html" class="nav-link text-dark nav-header-style">تایپوگرافی</a>
+                        </li>
+                        <li class="nav-item">
+                            <img src="./style/icons/bubble-graph.png" alt="" class="p-2">
+                            <a href="Icons.html" class="nav-link text-dark nav-header-style">ایکون ها</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="bi bi-geo-alt-fill p-2"></i>
+                            <a href="Map.html" class="nav-link text-dark nav-header-style">نقشه</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="bi bi-bell-fill p-2"></i>
+                            <a href="Notifications.html" class="nav-link text-dark nav-header-style">اعلانات</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="bi bi-globe2 p-2"></i>
+                            <a href="#" class="nav-link text-dark nav-header-style">پشتیبانی راستچین</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-secondary mt-auto mb-5 sidbar-button"><span><i
+                                class="bi bi-caret-up-square-fill p-2"></i></span>ارتقاع به نسخه ویژه</button>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-10">
+                <!-- نوار نویگیشن و دکمه همبرگری -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler mb-3" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand text-dark" href="#">Dashboard</a>
+                        <form class="d-flex" role="search">
+                            <input
+                                class="form-control me-2 searchinput text-dark focus-ring focus-ring-light text-decoration-none"
+                                type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn bg-light searchbtn me-3" type="submit"><i
+                                    class="bi bi-search"></i></button>
+                            <i class="bi bi-grid-1x2-fill p-2 me-2"></i>
+                            <div class="notification-wrapper me-2">
+                                <i class="bi bi-bell-fill p-2 me-0 navnotif"></i>
+                                <span class="notification-badge">2</span>
+                            </div>
+                            <i class="bi bi-person-fill text-dark p-2 me-4"></i>
+                        </form>
+                    </div>
+                </nav>
+
+                <!-- منوی آف‌کانواس برای حالت کوچک -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu"
+                    aria-labelledby="offcanvasMenuLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasMenuLabel">CREATIV TIM</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="nav flex-column list-group mt-3">
+                            <li class="nav-item active">
+                                <i class="bi bi-grid-1x2-fill p-2"></i>
+                                <a href="#"
+                                    class="nav-link text-dark list-group-item active shadow-lg border-0 rounded-2">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <i class="bi bi-person-fill text-dark p-2"></i>
+                                <a href="#" class="nav-link text-dark">User Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <i class="bi bi-clipboard p-2"></i>
+                                <a href="#" class="nav-link text-dark">Table List</a>
+                            </li>
+                            <li class="nav-item">
+                                <i class="bi bi-clipboard-fill p-2"></i>
+                                <a href="#" class="nav-link text-dark">Typography</a>
+                            </li>
+                            <li class="nav-item">
+                                <img src="./style/icons/bubble-graph.png" alt="" class="p-2">
+                                <a href="#" class="nav-link text-dark">icons</a>
+                            </li>
+                            <li class="nav-item">
+                                <i class="bi bi-geo-alt-fill p-2"></i>
+                                <a href="#" class="nav-link text-dark">Maps</a>
+                            </li>
+                            <li class="nav-item">
+                                <i class="bi bi-bell-fill p-2"></i>
+                                <a href="#" class="nav-link text-dark">Notifications</a>
+                            </li>
+                            <li class="nav-item">
+                                <i class="bi bi-globe2 p-2"></i>
+                                <a href="#" class="nav-link text-dark">RTL Support</a>
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline-secondary mt-auto mb-5 sidbar-button"><span><i
+                                    class="bi bi-caret-up-square-fill p-2"></i></span>Upgrade To Pro</button>
+                    </div>
+                </div>
+
+                <!-- محتوای اصلی -->
+                <div class="main-content p-0">
+                    <div class="content m-5">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="card card-status mb-4 mb-md-2">
+                                        <div class="icon-container"
+                                            style="background: linear-gradient(60deg,#ffa726,#fb8c00);">
+                                            <img src="./style/icons/copy-svgrepo-com.svg" alt="">
+                                        </div>
+                                        <div class="card-body mt-4">
+                                            <h6 class="card-subtitle mb-1 text-body-secondary">فضا مصرف شده</h6>
+                                            <h3 class="card-title mb-1">49/50 GB</h3>
+                                            <div class="card-foter">
+                                                <i class="bi bi-exclamation-triangle text-danger"></i>
+                                                <a href="#" class="card-link">فضای بیشتری داشته باشید...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="card card-status mb-4 mb-md-2">
+                                        <div class="icon-container"
+                                            style="background: linear-gradient(60deg,#66bb6a,#43a047);">
+                                            <img src="./style/icons/shop.svg" alt="">
+                                        </div>
+                                        <div class="card-body mt-4">
+                                            <h6 class="card-subtitle mb-1 text-body-secondary">سود</h6>
+                                            <h3 class="card-title mb-1">49/50 GB</h3>
+                                            <div class="card-foter">
+                                                <i class="bi bi-exclamation-triangle text-danger"></i>
+                                                <a href="#" class="card-link">۲۴ ساعت اخیر</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="card card-status mb-4 mb-md-2">
+                                        <div class="icon-container"
+                                            style="background: linear-gradient(60deg,#ef5350,#e53935);">
+                                            <img src="./style/icons/warning.svg" alt="">
+                                        </div>
+                                        <div class="card-body mt-4">
+                                            <h6 class="card-subtitle mb-1 text-body-secondary">مشکلات حل شده</h6>
+                                            <h3 class="card-title mb-1">49/50 GB</h3>
+                                            <div class="card-foter">
+                                                <i class="bi bi-exclamation-triangle text-danger"></i>
+                                                <a href="#" class="card-link">توسط گیت‌هاب</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="card card-status mb-4 mb-md-5">
+                                        <div class="icon-container"
+                                            style="background: linear-gradient(60deg, #1DA1F2, #0D8ECF);">
+                                            <img src="./style/icons/Twitter.svg" alt="">
+                                        </div>
+                                        <div class="card-body mt-4">
+                                            <h6 class="card-subtitle mb-1 text-body-secondary">دنبال‌کننده</h6>
+                                            <h3 class="card-title mb-1">49/50 GB</h3>
+                                            <div class="card-foter">
+                                                <i class="bi bi-exclamation-triangle text-danger"></i>
+                                                <a href="#" class="card-link">هم‌اکنون</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- سه کارت دوم -->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card sales-card mb-3 mt-5">
+                                        <div class="chart-placeholder" style="background-color: #4CAF50;"></div>
+                                        <div class="card-body p-3">
+                                            <h6 class="card-title mb-1">فروش روزانه</h6>
+                                            <div class="Profit-percentage d-flex p-0 me-0">
+                                                <p class="text-success m-0"><span><i
+                                                            class="bi bi-arrow-up"></i></span>53%</p>
+                                                <p class="card-text text-muted mb-1"> 55% رشد در فروش امروز.</p>
+                                            </div>
+
+                                            <p class="card-text text-muted small last-update-card">۴ دقیقه پیش
+                                                <i class="bi bi-clock ms-1"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card sales-card mb-3 mt-5">
+                                        <div class="chart-placeholder"
+                                            style=" background:linear-gradient(60deg,#ffa726,#fb8c00)"></div>
+                                        <div class="card-body p-3">
+                                            <h6 class="card-title mb-1">دنبال کننده‌های ایمیلی</h6>
+                                            <p class="card-text text-muted mb-1 mb-3">کارایی آخرین کمپین</p>
+                                            <p class="card-text text-muted small last-update-card">کمپین دو روز پیش
+                                                ارسال شد
+                                                <i class="bi bi-clock ms-1"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card sales-card mb-3 mt-5">
+                                        <div class="chart-placeholder"
+                                            style="background: linear-gradient(60deg,#ef5350,#e53935)"></div>
+                                        <div class="card-body p-3">
+                                            <h6 class="card-title mb-1">وظایف انجام شده</h6>
+                                            <p class="card-text text-muted mb-3">کارایی آخرین کمپین</p>
+                                            <p class="card-text text-muted small last-update-card">کمپین دو روز پیش
+                                                ارسال شد
+                                                <i class="bi bi-clock ms-1"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- دوتا کارت اخری -->
+                            <div class="row d-flex justify-content-center align-items-center" id="last-row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+
+                                    <div class="card">
+                                        <div class="card-header card-header-primary">
+                                            <h3 class="card-title text-white fs-3">اعلان ها</h3>
+                                            <p class="card-category">ایجاد شده توسط دوست ما
+                                                <a target="_blank" href="https://github.com/mouse0270">Robert
+                                                    McIntosh</a>. لطفا
+                                                <a href="http://bootstrap-notify.remabledesigns.com/"
+                                                    target="_blank">مستندات کامل </a> را مشاهده بکنید.
+                                            </p>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="alert alert-warning">
+                                                <button type="button" class="close" data-dismiss="alert"
+                                                    aria-label="Close">
+                                                    <i class="material-icons">close</i>
+                                                </button>
+                                                <span>
+                                                    این یک اعلان است که با کلاس "alert-warning" ایجاد شده
+                                                    است.</span>
+                                            </div>
+                                            <div class="alert alert-primary">
+                                                <button type="button" class="close" data-dismiss="alert"
+                                                    aria-label="Close">
+                                                    <i class="material-icons">close</i>
+                                                </button>
+                                                <span>
+                                                    این یک اعلان است که با کلاس "alert-primary" ایجاد شده
+                                                    است.</span>
+                                            </div>
+                                            <div class="alert alert-info alert-with-icon" data-notify="container">
+                                                <i class="material-icons" data-notify="icon">add_alert</i>
+                                                <button type="button" class="close" data-dismiss="alert"
+                                                    aria-label="Close">
+                                                    <i class="material-icons">close</i>
+                                                </button>
+                                                <span data-notify="پیام">این یک اعلان با دکمه بستن و آیکن است</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+
+                                    <div class="card card-profile">
+
+                                        <div class=" card-avatar" style="position: relative; height: 0;">
+                                            <a href="">
+                                                <img class="img" src="./style/image/marc.jpg"
+                                                    style="width: 120px; height: 120px; border-radius: 50%; position: absolute; top: -60px; left: 50%; transform: translateX(-50%); border: 4px solid white; box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);">
+                                            </a>
+                                        </div>
+                                    </div>
+                                <div class="card-body" style="padding-top: 80px;;">
+                                    <div class="card-body-text">
+                                        <h6 class="card-category text-gray text-center">مدیرعامل / مدیرفنی
+                                        </h6>
+                                        <h4 class="card-title text-center fs-6">خداداد عزیزی
+                                        </h4>
+                                        <p class="card-description text-center">
+                                            طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن
+                                            صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می
+                                            نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن
+                                            باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی
+                                            و بی‌معنی استفاده می‌کنند ...
+
+
+                                        </p>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="javascript:;" class="btn btn-round btn-sub2 mx-auto">Follow</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer class=" text-center  d-flex">
+            <div class="container">
+                <div class="foter">
+                    <div class="row">
+                        <div class="col d-flex flex-row list-unstyled">
+                            <p class="me-3">CRETAIVTM</p>
+                            <p class="me-3">ABOUT US</p>
+                            <p class="me-3">BLOG</p>
+                            <p>LICENCE</p>
+                        </div>
+                        <div class="col d-flex flex-row justify-content-end list-unstyled">
+                            <p class="me-3">©</p>
+                            <p>2025, made wth</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

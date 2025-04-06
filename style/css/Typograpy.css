@@ -1,0 +1,36 @@
+.card-header{
+    height: 80px;
+    background: linear-gradient(60deg,#ab47bc,#8e24aa);
+    color: #fff ;
+    justify-content: left;
+    align-items: center;
+    border: none;
+    width: 95%;  
+    border-radius: 2px 2px 0 0;
+    margin: -40px auto 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+    
+}
+
+
+.tim-typo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+span{
+    font-size: 10px;
+    color: grey;
+}
+p{
+    font-size: 10px;
+}
+.tim-note{
+    margin-right: 300px;
+}
+
+.tim-note *{
+    font-size: 15px !important;
+}

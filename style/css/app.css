@@ -1,0 +1,236 @@
+    .card-status {
+        text-align: right;
+        position: relative;
+        overflow: visible;
+    }
+
+    .card-foter {
+        text-align: left;
+        position: relative;
+        padding-top: 10px;
+        font-size: 14px;
+    }
+
+    .card-foter::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 1px;
+        background-color: #ddd;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .icon-container {
+        position: absolute;
+        top: -19%;
+        left: 2%;
+        width: 30%;
+        height: 68%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        border-radius: 2px;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-container img {
+        width: 60%;
+        height: 45%;
+        object-fit: contain;
+    }
+
+    /* تنظیمات ریسپانسیو برای کارت‌ها */
+    @media (max-width: 991.98px) {
+        .icon-container {
+            width: 25%;
+            height: 50%;
+            top: -15%;
+            left: 5%;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        .icon-container {
+            width: 20%;
+            height: 40%;
+            top: -12%;
+            left: 5%;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .icon-container {
+            width: 15%;
+            height: 30%;
+            top: -10%;
+            left: 5%;
+        }
+    }
+
+
+    .sales-card {
+        height: 300px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        transition: all 0.3s ease;
+        position: relative; 
+        
+    }
+
+    .sales-card:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+    }
+
+    .chart-placeholder {
+        width: 95%;
+        height: 200px;
+        background-color: #4CAF50;
+        border-radius: 2px 2px 0 0;
+        margin: -40px auto 0 auto;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        position: relative;
+        z-index: 1;
+    }
+
+    .card-body {
+        padding: 1.5rem 1rem; 
+        position: relative; 
+        z-index: 0; 
+    }
+
+    .card-title {
+        font-size: 1rem;
+        color: #333;
+    }
+
+    .card-text.text-muted {
+        font-size: 0.875rem;
+        color: #666;
+    }
+
+    .card-text.small {
+        font-size: 0.75rem;
+    }
+
+    .bi-clock {
+        vertical-align: middle;
+    }
+
+
+    .last-update-card{
+        position: relative;
+    }
+
+
+    .last-update-card::before {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: #d7d8d7 !important;
+        position: absolute !important;
+        top: -10px !important;
+        
+    }
+
+
+    /* استایل تب ها */
+
+    .nav-tabs{
+        height: 80px;
+        background: linear-gradient(60deg,#ab47bc,#8e24aa);
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        border: none;
+        width: 95%;  
+        border-radius: 2px 2px 0 0;
+        margin: -40px auto 0 auto;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        position: relative;
+        z-index: 1;
+        border: none;
+    }
+
+
+    #nav-link-bootom{
+        color: #EEEEEE !important;
+        border: none !important;
+        font-size: 20px;;
+        margin: 0px;
+        border-radius: 0px !important;
+        /* background-color: #ab47bc; */
+    }
+
+
+    
+    .tab-pane{
+        background-color: white !important;
+    } 
+
+
+    .nav-tabs .nav-link.active {
+        background-color: rgba(203, 182, 182, 0.300) !important; 
+        color: rgb(255, 255, 255);
+        border: 0px !important;
+    }
+
+
+    .nav-link:hover
+    {
+        border: none !important;
+    }
+    .nav-item:focus{
+        background-color: rgba(203, 182, 182, 0.863); 
+        color: rgb(255, 255, 255); 
+        border: 0px !important;
+    }
+    .task-card {
+        background-color: #f8f9fa; 
+        border-radius: 0 0 8px 8px; 
+        color: #000000;
+        
+    }
+    .task-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0;
+        border-bottom: 1px solid #dee2e6;
+        color: #5f5b5b !important;
+        font-size: 15px;
+        border: none;
+    }
+    .task-item:last-child {
+        border-bottom: none;
+    }
+    .delete-btn {
+        color: #dc3545; 
+        cursor: pointer;
+    }
+    .delete-btn:hover {
+        color: #c82333;
+    }
+
+    .check-btn{
+        color: #9c27b0;
+    }
+
+    table{
+        font-size: 16px !important;
+    }
+
+    .theader{
+        color: #ff9800!important;
+    }
+
+    [type = "checkbox"]:active{
+        color: #8e24aa;
+        margin: 10px !important;
+
+    }

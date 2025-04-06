@@ -1,0 +1,74 @@
+
+
+/* استایل کارت لاگین اول */
+
+.form-control{
+    border: none !important;
+    border-bottom: 1px rgb(136, 136, 136) solid !important;
+}
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border: none !important;
+    border-bottom: 3px #9c27b0 solid !important;
+    
+}
+.btn-sub{
+    background-color: #9c27b0;
+    border-color: #9c27b0;
+    color: white;
+    
+}
+.btn-sub:hover{
+    background-color: #9c27b0;
+    box-shadow: 0 0 10px purple;
+    color: white;
+    
+}
+
+.card-header-form{
+    height: 80px;
+    background: linear-gradient(60deg,#ab47bc,#8e24aa);
+    color: #fff ;
+    justify-content: left;
+    align-items: center;
+    border: none;
+    width: 95%;  
+    border-radius: 2px 2px 0 0;
+    margin: -40px auto 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+    
+}
+
+.btn-sub2{
+    width: 120px;
+    border-radius: 80px;
+        color: #fff;
+        background-color: #9c27b0;
+        border-color: #9c27b0;
+        box-shadow: 0 2px 2px 0 rgba(156,39,176,.14),0 3px 1px -2px rgba(156,39,176,.2),0 1px 5px 0 rgba(156,39,176,.12);
+}
+.btn-sub2:hover{
+    color: #fff;
+    background-color: #8e24aa;
+    box-shadow: 0 0 10px purple;
+   
+}
+.btn-sub:active{
+    color: #fff !important;
+    background-color: #8e24aa !important;
+    box-shadow: 0 0 10px purple;
+}
+.btn-sub2:active{
+    color: #fff;
+    background-color: #8e24aa !important;
+    box-shadow: 0 0 10px purple;
+}
+
+.card-body-text{
+    color: #999;
+    font-size: 10px;
+}
+

@@ -1,0 +1,37 @@
+.card-header{
+    height: 80px;
+    background: linear-gradient(60deg,#ab47bc,#8e24aa);
+    color: #fff ;
+    justify-content: left;
+    align-items: center;
+    border: none;
+    width: 95%;  
+    border-radius: 2px 2px 0 0;
+    margin: -40px auto 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+    
+}
+
+th{
+    font-size: 1.063rem;
+    color: #9c27b0!important;
+    border-collapse: collapse;
+}
+
+td{
+    color: #a3a0a0 !important; 
+    border-color: #ddd;
+}
+
+[class="text-primary"]{
+    color: #9c27b0!important;
+}
+
+
+
+
+.secend-card{
+    margin-top: 70px;
+}

@@ -1,0 +1,31 @@
+.card-header{
+    height: 80px;
+    background: linear-gradient(60deg,#ab47bc,#8e24aa);
+    color: #fff ;
+    justify-content: left;
+    align-items: center;
+    border: none;
+    width: 100%;  
+    border-radius: 2px 2px 0 0;
+    margin: -40px auto 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+    
+}
+
+.card-body {
+    padding: 0;
+    overflow: hidden;
+}
+@media (max-width: 768px) {
+    .card-body {
+        min-height: 50vh; 
+    }
+}
+
+@media (max-width: 991px) {
+    .row {
+        margin: 0 !important; 
+    }
+}

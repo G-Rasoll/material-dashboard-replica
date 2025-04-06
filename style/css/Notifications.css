@@ -1,0 +1,108 @@
+.card-header {
+    height: 80px;
+    background: linear-gradient(60deg, #ab47bc, #8e24aa);
+    color: #fff;
+    justify-content: left;
+    align-items: center;
+    border: none;
+    width: 95%;
+    border-radius: 2px 2px 0 0;
+    margin: -40px auto 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+    
+
+}
+
+.seced-title {
+    margin-top: 10px !important;
+    font-size: small !important;
+}
+
+
+.alert {
+    padding: 1rem;
+    /* تنظیم پدینگ برای بهتر دیده شدن */
+    font-size: 15px;
+    color: #fff;
+}
+
+.alert.alert-info {
+    background-color: #00cae3 !important;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(0, 188, 212, .4);
+
+}
+
+.alert-success {
+    background-color: #55b559;
+    color: #fff;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(76, 175, 80, .4);
+}
+
+.alert-warning {
+
+    background-color: #ff9e0f;
+    color: #fff;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14),0 7px 10px -5px rgba(255,152,0,.4);
+
+}
+
+.alert-danger{
+    background-color: #f55145;
+    color: #fff;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14),0 7px 10px -5px rgba(244,67,54,.4);
+}
+
+.alert-primary{
+    background-color: #a72abd;
+    color: #fff;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14),0 7px 10px -5px rgba(156,39,176,.4);
+}
+
+.close {
+    font-size: 0.8rem;
+
+    background: none;
+
+    border: none;
+
+    padding: 0;
+
+    line-height: 1;
+
+    color: #fff;
+}
+
+.alert-with-icon .bi-rocket-fill {
+    font-size: 1.2rem;
+    color: #fff !important;
+}
+
+.alert-with-icon .d-flex {
+    flex-grow: 1;
+}
+
+
+
+.btn-primary{
+    margin-bottom: 25px;
+    font-size: 10px;
+    border-radius: 1px;
+    background-color: #8e24aa;
+    border-color: #9c27b0;
+    width: 300px;
+    height: 30px;
+    box-shadow: 0 2px 2px 0 rgba(156,39,176,.14),0 3px 1px -2px rgba(156,39,176,.2),0 1px 5px 0 rgba(156,39,176,.12);
+
+}
+
+.btn-primary:hover{
+    background-color: #711082;
+    box-shadow: 0 2px 2px 0 rgba(156,39,176,.14),0 3px 1px -2px rgba(156,39,176,.2),0 1px 5px 0 rgba(156,39,176,0.12);
+}
+
+.btn-primary:focus{
+    background-color: #711082 !important;
+    box-shadow: 0 2px 2px 0 rgba(156,39,176,.14),0 3px 1px -2px rgba(156,39,176,.2),0 1px 5px 0 rgba(156,39,176,0.12);
+}
